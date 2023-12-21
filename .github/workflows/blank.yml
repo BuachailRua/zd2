@@ -32,6 +32,6 @@ jobs:
         if: failure()
         uses: appleboy/telegram-action@master
         with:
-          message: "Сделано no успешно"
+          message: "Сделано ne успешно"
           to: 808013173
           token: 6878790209:AAGwUdasDnQ8dmA2RfrnqRVhtZOcLO8yIsI
