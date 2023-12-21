@@ -16,7 +16,7 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-      - run: docker build -t ghcr.io/buachailrua/zd2:1.0 .
+      - run: docker build -t ghcr.io/buachailrua/zd3:1.0 .
       - run: docker push ghcr.io/buachailrua/zd2:1.0
       - run: docker build -t ghcr.io/buachailrua/zd2-2:1.0 .
       - run: docker push ghcr.io/buachailrua/zd2-2:1.0
