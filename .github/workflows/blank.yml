@@ -20,7 +20,7 @@ jobs:
       - run: docker push ghcr.io/buachailrua/zd2-1:1.0
       - run: docker build -t ghcr.io/buachailrua/zd2-2:1.0 .
       - run: docker push ghcr.io/buachailrua/zd2-2:1.0
-      - run: ssh -o "StrictHostKeyChecking no" 'buachailrua-zd2-wtmvs9oti1l#RSZ3OnU9NvesmbbxFCEodP_K_JZ9fxKu@buachailrua-zd2-wtmvs9oti1l.ssh.ws-us107.gitpod.io' "cd /workspace/zd2 && docker compose pull && docker compose up -d"
+      - run: ssh -o "StrictHostKeyChecking no" 'buachailrua-zd2-wtmvs9oti1l#gHb1wAHPzWo9Q.cmHlwh_xT9zr1m1WQX@buachailrua-zd2-wtmvs9oti1l.ssh.ws-eu107.gitpod.io' "cd /workspace/zd2 && docker compose pull && docker compose up -d"
       - name: send default message
         if: success()
         uses: appleboy/telegram-action@master
